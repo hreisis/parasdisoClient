@@ -36,10 +36,19 @@ h2 {
     padding: 80px;
     background-image: url('BG.jpg');
     color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.jumbotron h1{
+    background-color: rgba(165, 84, 151, 0.5);
+
 }
 
 .jumbotron h2 {
+    background-color: rgba(165, 84, 151, 0.5);
     color: #ffc8f4;
+    text-shadow: 2px 2px 2px black;
 }
 
 .navbar-dark {
