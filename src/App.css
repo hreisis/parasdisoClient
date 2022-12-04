@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3, .card-body>.card-title {
-    font-family: "Lobster", cursive;
+    font-family: "Acme", cursive;
 } 
 
 .card-title {
@@ -12,7 +12,7 @@ h1, h2, h3, .card-body>.card-title {
 }
 
 h2 {
-    color: #3046C5;
+    color: #c53067;
 }
 
 .card-img-overlay .card-title {
@@ -39,7 +39,7 @@ h2 {
 }
 
 .jumbotron h2 {
-    color: #CEC8FF;
+    color: #ffc8f4;
 }
 
 .navbar-dark {

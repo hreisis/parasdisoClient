@@ -19,6 +19,7 @@
     "redux": "4.0.5",
     "redux-logger": "3.0.6",
     "redux-thunk": "2.3.0",
+    "typeface-acme": "^1.1.13",
     "typeface-lobster": "^0.0.72",
     "typeface-open-sans": "^0.0.75"
   },

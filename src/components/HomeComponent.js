@@ -17,14 +17,13 @@ function RenderCard({item, isLoading, errMess}) {
             transformProps={{
                 exitTransform: 'scale(0.5) translateY(50%)'
             }}>
-                <h1>{item}</h1>
-            {/* <Card>
-                <CardImg src={baseUrl + item&&item.image} alt={item.name} />
+             <Card>
+                <CardImg src={baseUrl + item.image} alt={item.name} />
                 <CardBody>
                     <CardTitle>{item.name}</CardTitle>
                     <CardText>{item.description}</CardText>
                 </CardBody>
-            </Card> */}
+            </Card>
         </FadeTransform>
     );
 }
@@ -32,15 +31,18 @@ function RenderCard({item, isLoading, errMess}) {
 function Home(props) {
     return (
         <div className='container'>
+            <br/>
             <div className='row'>
                 <div className='col-md m-1'>
+                    <h2>Featured Item</h2>
                     <RenderCard
                         item={props.tea}
-                        isLoading={props.teaLoading}
-                        errMess={props.teaErrMess}
+                        isLoading={props.teasLoading}
+                        errMess={props.teasErrMess}
                     />
                 </div>
                 <div className='col-md m-1'>
+                    <h2>Promotion this month</h2>
                     <RenderCard
                         item={props.promotion}
                         isLoading={props.promotionLoading}
@@ -48,14 +50,16 @@ function Home(props) {
                     />
                 </div>
                 <div className='col-md m-1'>
+                    <h2>Our partner promotion</h2>
                     <RenderCard 
                         item={props.partner}
                         isLoading={props.partnerLoading}
                         errMess={props.partnerErrMess}
                     />
                 </div>
-            </div>
+            </div>        <br />
         </div>
+
     );
 }
 
